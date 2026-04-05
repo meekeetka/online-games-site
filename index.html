@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Zone — Free HTML5 Games</title>
+  <meta name="description" content="Free HTML5 games right in your browser. Puzzles, arcades, strategy and word games." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Game Zone</a>
+    <p class="tagline">HTML5 games in your browser</p>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="hero-label">Free · No registration</p>
+      <h1>Play right now</h1>
+      <p class="hero-sub">A curated collection of HTML5 games. Puzzles, strategy, cards — pick your favorite.</p>
+    </section>
+
+    <div class="filters" id="filters" role="group" aria-label="Filter by category">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="puzzle">Puzzle</button>
+      <button class="filter-btn" data-cat="strategy">Strategy</button>
+      <button class="filter-btn" data-cat="cards">Cards</button>
+      <button class="filter-btn" data-cat="word">Word</button>
+    </div>
+
+    <section id="featured-section" aria-label="Featured games">
+      <div class="section-header">
+        <h2 class="section-title">⭐ Featured</h2>
+        <span class="section-count" id="featured-count"></span>
+      </div>
+      <div id="featured-grid" class="featured-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="all-section" style="margin-top:2rem" aria-label="All games">
+      <div class="section-header">
+        <h2 class="section-title">All Games</h2>
+        <span class="section-count" id="all-count"></span>
+      </div>
+      <div id="grid" class="game-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Game Zone</small>
+    <small>Games embedded from <a href="https://playpager.com" target="_blank" rel="noopener">playpager.com</a> — check their terms before publishing.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

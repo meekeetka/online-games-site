@@ -1,0 +1,79 @@
+[
+  {
+    "id": "chess",
+    "title": "Chess",
+    "description": "Play chess against the computer. Classic strategy game — choose your difficulty and outsmart the AI.",
+    "coverUrl": "https://picsum.photos/seed/chessgame99/400/225",
+    "embedUrl": "https://playpager.com/embed/chess/index.html",
+    "openInNewTabUrl": "https://playpager.com/embed/chess/index.html",
+    "aspectRatio": "16/9",
+    "category": "strategy",
+    "featured": true
+  },
+  {
+    "id": "sudoku",
+    "title": "Sudoku",
+    "description": "Classic number puzzle. Fill the 9×9 grid so every row, column, and box contains digits 1–9.",
+    "coverUrl": "https://picsum.photos/seed/sudoku99/400/225",
+    "embedUrl": "https://playpager.com/embed/sudoku/index.html",
+    "openInNewTabUrl": "https://playpager.com/embed/sudoku/index.html",
+    "aspectRatio": "16/9",
+    "category": "puzzle",
+    "featured": true
+  },
+  {
+    "id": "solitaire",
+    "title": "Solitaire",
+    "description": "Klondike solitaire — the timeless card game. Sort all cards into the four foundation piles.",
+    "coverUrl": "https://picsum.photos/seed/solitaire99/400/225",
+    "embedUrl": "https://playpager.com/embed/solitaire/index.html",
+    "openInNewTabUrl": "https://playpager.com/embed/solitaire/index.html",
+    "aspectRatio": "16/9",
+    "category": "cards",
+    "featured": true
+  },
+  {
+    "id": "checkers",
+    "title": "Checkers",
+    "description": "Classic draughts / checkers against the computer. Jump over your opponent's pieces to win.",
+    "coverUrl": "https://picsum.photos/seed/checkers99/400/225",
+    "embedUrl": "https://playpager.com/embed/checkers/index.html",
+    "openInNewTabUrl": "https://playpager.com/embed/checkers/index.html",
+    "aspectRatio": "16/9",
+    "category": "strategy",
+    "featured": false
+  },
+  {
+    "id": "cubes",
+    "title": "Cubes",
+    "description": "Match and clear cubes before the board fills up. A colorful, fast-paced puzzle game.",
+    "coverUrl": "https://picsum.photos/seed/cubes99/400/225",
+    "embedUrl": "https://playpager.com/embed/cubes/index.html",
+    "openInNewTabUrl": "https://playpager.com/embed/cubes/index.html",
+    "aspectRatio": "16/9",
+    "category": "puzzle",
+    "featured": false
+  },
+  {
+    "id": "reversi",
+    "title": "Othello / Reversi",
+    "description": "Flip your opponent's discs to claim the board. Simple rules, deep strategy.",
+    "coverUrl": "https://picsum.photos/seed/reversi99/400/225",
+    "embedUrl": "https://playpager.com/embed/reversi/index.html",
+    "openInNewTabUrl": "https://playpager.com/embed/reversi/index.html",
+    "aspectRatio": "16/9",
+    "category": "strategy",
+    "featured": false
+  },
+  {
+    "id": "word-puzzle",
+    "title": "Word Puzzle",
+    "description": "Find hidden words in the letter grid before the clock runs out. Great for vocabulary lovers.",
+    "coverUrl": "https://picsum.photos/seed/wordpuzzle99/400/225",
+    "embedUrl": "https://playpager.com/embed/word-puzzle/index.html",
+    "openInNewTabUrl": "https://playpager.com/embed/word-puzzle/index.html",
+    "aspectRatio": "16/9",
+    "category": "word",
+    "featured": false
+  }
+]
