@@ -1,9 +1,11 @@
 const CATEGORY_LABELS = {
-  puzzle: 'Puzzle',
-  arcade: 'Arcade',
   strategy: 'Strategy',
-  word: 'Word',
+  board: 'Board',
+  puzzle: 'Puzzle',
   cards: 'Cards',
+  arcade: 'Arcade',
+  word: 'Word',
+  quiz: 'Quiz',
 };
 
 function escapeHtml(s) {
@@ -27,12 +29,7 @@ async function main() {
   const fullscreenBtn = document.getElementById('fullscreen-btn');
   const catTag = document.getElementById('game-category-tag');
 
-  if (!id) {
-    document.title = 'Game not found — Game Zone';
-    titleEl.textContent = 'Game not found';
-    crumbEl.textContent = 'Error';
-    return;
-  }
+  if (!id) { titleEl.textContent = 'Game not found'; return; }
 
   try {
     const res = await fetch('games.json');
@@ -40,12 +37,7 @@ async function main() {
     const games = await res.json();
     const game = games.find(g => g.id === id);
 
-    if (!game) {
-      document.title = 'Game not found — Game Zone';
-      titleEl.textContent = 'Game not found';
-      crumbEl.textContent = 'Error';
-      return;
-    }
+    if (!game) { titleEl.textContent = 'Game not found'; return; }
 
     document.title = `${game.title} — Game Zone`;
     titleEl.textContent = game.title;
@@ -54,10 +46,7 @@ async function main() {
     descEl.textContent = game.description || '';
 
     const catLabel = CATEGORY_LABELS[game.category] || game.category;
-    if (catLabel) {
-      catTag.textContent = catLabel;
-      catTag.classList.remove('hidden');
-    }
+    if (catLabel) { catTag.textContent = catLabel; catTag.classList.remove('hidden'); }
 
     if (game.aspectRatio === '4/3') ratioEl.dataset.ratio = '4/3';
 
@@ -75,9 +64,7 @@ async function main() {
     });
 
   } catch {
-    document.title = 'Error — Game Zone';
     titleEl.textContent = 'Failed to load game';
-    crumbEl.textContent = 'Error';
   }
 }
 

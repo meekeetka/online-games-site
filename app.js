@@ -1,9 +1,11 @@
 const CATEGORY_LABELS = {
-  puzzle: 'Puzzle',
-  arcade: 'Arcade',
   strategy: 'Strategy',
-  word: 'Word',
+  board: 'Board',
+  puzzle: 'Puzzle',
   cards: 'Cards',
+  arcade: 'Arcade',
+  word: 'Word',
+  quiz: 'Quiz',
 };
 
 function escapeHtml(s) {
@@ -19,7 +21,7 @@ function escapeAttr(s) {
     .replace(/</g, '&lt;');
 }
 
-function createCard(g, isFeatured = false) {
+function createCard(g, isFeatured) {
   const a = document.createElement('a');
   a.className = 'game-card' + (isFeatured ? ' featured' : '');
   a.href = `game.html?id=${encodeURIComponent(g.id)}`;
@@ -78,8 +80,8 @@ function renderGrids() {
 
 async function loadGames() {
   const grid = document.getElementById('grid');
-  grid.innerHTML = [1,2,3,4].map(() =>
-    `<div class="skeleton" style="aspect-ratio:16/9;height:auto;min-height:180px"></div>`
+  grid.innerHTML = Array(6).fill(
+    `<div class="skeleton" style="aspect-ratio:16/9;height:auto;min-height:160px"></div>`
   ).join('');
 
   try {
@@ -99,7 +101,7 @@ async function loadGames() {
     renderGrids();
   } catch {
     grid.innerHTML =
-      '<p class="empty-state">Could not load games.json.<br>Run <code>cd site-upgraded && python3 -m http.server 8080</code> and open <code>http://127.0.0.1:8080</code>.</p>';
+      '<p class="empty-state">Could not load games.json.<br>Run: <code>cd site-upgraded && python3 -m http.server 8080</code></p>';
   }
 }
 

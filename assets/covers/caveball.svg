@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1008"/>
+      <stop offset="100%" stop-color="#0f0a04"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <defs><radialGradient id="ballgrad" cx="35%" cy="30%"><stop offset="0%" stop-color="white"/><stop offset="100%" stop-color="#e0e0e0"/></radialGradient></defs><path d="M 30 20 Q 80 60 60 90 Q 40 120 70 150 Q 90 175 60 205 L 370 205 Q 340 175 360 150 Q 390 120 370 90 Q 350 60 320 20 Z" fill="rgba(50,30,10,0.7)" stroke="rgba(150,100,50,0.4)" stroke-width="1"/><polygon points="180,66 190,80 180,90 170,80" fill="#e74c3c" opacity="0.9"/><polygon points="180,66 190,80 180,76" fill="white" opacity="0.3"/><polygon points="220,86 230,100 220,110 210,100" fill="#3498db" opacity="0.9"/><polygon points="220,86 230,100 220,96" fill="white" opacity="0.3"/><polygon points="260,56 270,70 260,80 250,70" fill="#2ecc71" opacity="0.9"/><polygon points="260,56 270,70 260,66" fill="white" opacity="0.3"/><polygon points="150,116 160,130 150,140 140,130" fill="#f39c12" opacity="0.9"/><polygon points="150,116 160,130 150,126" fill="white" opacity="0.3"/><polygon points="300,106 310,120 300,130 290,120" fill="#9b59b6" opacity="0.9"/><polygon points="300,106 310,120 300,116" fill="white" opacity="0.3"/><circle cx="200" cy="155" r="18" fill="url(#ballgrad)"/><rect x="155" y="178" width="90" height="14" rx="7" fill="#c0392b" stroke="rgba(255,255,255,0.3)" stroke-width="1"/><text x="200" y="213" font-family="Georgia,serif" font-size="14" font-weight="bold" text-anchor="middle" fill="rgba(255,255,255,0.7)" letter-spacing="3">CAVEBALL</text>
+</svg>
