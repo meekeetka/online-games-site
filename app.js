@@ -1,108 +1,20 @@
-const CATEGORY_LABELS = {
-  strategy: 'Strategy',
-  board: 'Board',
-  puzzle: 'Puzzle',
-  cards: 'Cards',
-  arcade: 'Arcade',
-  word: 'Word',
-  quiz: 'Quiz',
-};
-
-function escapeHtml(s) {
-  const d = document.createElement('div');
-  d.textContent = s;
-  return d.innerHTML;
-}
-
-function escapeAttr(s) {
-  return String(s)
-    .replace(/&/g, '&amp;')
-    .replace(/"/g, '&quot;')
-    .replace(/</g, '&lt;');
-}
-
-function createCard(g, isFeatured) {
-  const a = document.createElement('a');
-  a.className = 'game-card' + (isFeatured ? ' featured' : '');
-  a.href = `game.html?id=${encodeURIComponent(g.id)}`;
-  const catLabel = CATEGORY_LABELS[g.category] || g.category || '';
-  a.innerHTML = `
-    <div class="card-img-wrap">
-      <img src="${escapeAttr(g.coverUrl)}" alt="${escapeAttr(g.title)}" width="400" height="225" loading="lazy" />
-      ${isFeatured ? '<span class="card-badge featured-badge">Featured</span>' : ''}
-      ${catLabel ? `<span class="card-badge cat-badge" style="${isFeatured ? 'left:auto;right:.6rem' : ''}">${escapeHtml(catLabel)}</span>` : ''}
-      <div class="card-play-icon" aria-hidden="true">
-        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="32" cy="32" r="30" fill="rgba(79,138,255,0.9)"/>
-          <path d="M26 20l20 12-20 12V20z" fill="#fff"/>
-        </svg>
-      </div>
-    </div>
-    <div class="game-card-body">
-      <h2>${escapeHtml(g.title)}</h2>
-      <p>${escapeHtml(g.description || '')}</p>
-    </div>
-  `;
-  return a;
-}
-
-let allGames = [];
-let currentCat = 'all';
-
-function renderGrids() {
-  const featuredGrid = document.getElementById('featured-grid');
-  const grid = document.getElementById('grid');
-  const featuredCount = document.getElementById('featured-count');
-  const allCount = document.getElementById('all-count');
-  const featuredSection = document.getElementById('featured-section');
-
-  const filtered = currentCat === 'all'
-    ? allGames
-    : allGames.filter(g => g.category === currentCat);
-
-  const featured = filtered.filter(g => g.featured);
-  const rest = filtered.filter(g => !g.featured);
-
-  featuredSection.style.display = featured.length ? '' : 'none';
-  featuredGrid.innerHTML = '';
-  for (const g of featured) featuredGrid.appendChild(createCard(g, true));
-  featuredCount.textContent = featured.length || '';
-
-  grid.innerHTML = '';
-  if (rest.length === 0 && featured.length === 0) {
-    grid.innerHTML = '<p class="empty-state">No games found in this category.</p>';
-    allCount.textContent = '0';
-  } else {
-    for (const g of rest) grid.appendChild(createCard(g, false));
-    allCount.textContent = rest.length;
-  }
-}
-
-async function loadGames() {
-  const grid = document.getElementById('grid');
-  grid.innerHTML = Array(6).fill(
-    `<div class="skeleton" style="aspect-ratio:16/9;height:auto;min-height:160px"></div>`
-  ).join('');
-
-  try {
-    const res = await fetch('games.json');
-    if (!res.ok) throw new Error('games.json not found');
-    allGames = await res.json();
-
-    document.getElementById('filters').addEventListener('click', e => {
-      const btn = e.target.closest('.filter-btn');
-      if (!btn) return;
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentCat = btn.dataset.cat;
-      renderGrids();
-    });
-
-    renderGrids();
-  } catch {
-    grid.innerHTML =
-      '<p class="empty-state">Could not load games.json.<br>Run: <code>cd site-upgraded && python3 -m http.server 8080</code></p>';
-  }
-}
-
-loadGames();
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a5c30"/>
+      <stop offset="100%" stop-color="#0d3a1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  
+    <rect x="60" y="45" width="70" height="95" rx="8" fill="#c0392b" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <text x="95" y="100" font-family="serif" font-size="36" text-anchor="middle" fill="white">♥</text>
+    <rect x="155" y="55" width="70" height="95" rx="8" fill="#1a6b3a" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <text x="190" y="110" font-family="serif" font-size="36" text-anchor="middle" fill="white">♠</text>
+    <rect x="250" y="45" width="70" height="95" rx="8" fill="#c0392b" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <text x="285" y="100" font-family="serif" font-size="36" text-anchor="middle" fill="white">♦</text>
+    <text x="75" y="67" font-family="Georgia,serif" font-size="13" fill="white" font-weight="bold">A</text>
+    <text x="170" y="77" font-family="Georgia,serif" font-size="13" fill="white" font-weight="bold">K</text>
+    <text x="265" y="67" font-family="Georgia,serif" font-size="13" fill="white" font-weight="bold">Q</text>
+    <text x="200" y="210" font-family="Georgia,serif" font-size="14" font-weight="bold" text-anchor="middle" fill="rgba(255,255,255,0.7)" letter-spacing="3">SOLITAIRE</text>
+</svg>

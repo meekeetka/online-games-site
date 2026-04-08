@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a2010"/>
+      <stop offset="100%" stop-color="#2a1008"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <rect x="60" y="30" width="280" height="160" rx="6" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><polygon points="85,40 105,40 95,140" fill="#c0392b" opacity="0.8"/><polygon points="85,180 105,180 95,80" fill="#c0392b" opacity="0.6"/><polygon points="125,40 145,40 135,140" fill="#f0f0f0" opacity="0.8"/><polygon points="125,180 145,180 135,80" fill="#f0f0f0" opacity="0.6"/><polygon points="165,40 185,40 175,140" fill="#c0392b" opacity="0.8"/><polygon points="165,180 185,180 175,80" fill="#c0392b" opacity="0.6"/><polygon points="205,40 225,40 215,140" fill="#f0f0f0" opacity="0.8"/><polygon points="205,180 225,180 215,80" fill="#f0f0f0" opacity="0.6"/><polygon points="245,40 265,40 255,140" fill="#c0392b" opacity="0.8"/><polygon points="245,180 265,180 255,80" fill="#c0392b" opacity="0.6"/><polygon points="285,40 305,40 295,140" fill="#f0f0f0" opacity="0.8"/><polygon points="285,180 305,180 295,80" fill="#f0f0f0" opacity="0.6"/><circle cx="85" cy="50" r="12" fill="#c0392b" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/><circle cx="85" cy="68" r="12" fill="#c0392b" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/><circle cx="125" cy="50" r="12" fill="#c0392b" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/><circle cx="205" cy="165" r="12" fill="white" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/><circle cx="245" cy="165" r="12" fill="white" stroke="rgba(0,0,0,0.3)" stroke-width="1.5"/><text x="200" y="213" font-family="Georgia,serif" font-size="13" font-weight="bold" text-anchor="middle" fill="rgba(255,255,255,0.7)" letter-spacing="2">BACKGAMMON</text>
+</svg>

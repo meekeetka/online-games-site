@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#2d1b4e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#pbg)"/>
+  <ellipse cx="200" cy="125" rx="95" ry="78" fill="none" stroke="rgba(255,200,80,0.5)" stroke-width="4"/>
+  <circle cx="200" cy="95" r="10" fill="#f1c40f"/>
+  <path d="M 130 170 L 150 150 L 270 150 L 290 170 Z" fill="rgba(231,76,60,0.85)"/>
+  <text x="200" y="210" font-family="Georgia,serif" font-size="14" font-weight="bold" text-anchor="middle" fill="rgba(255,255,255,0.75)" letter-spacing="3">PINBALL</text>
+</svg>

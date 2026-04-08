@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <rect width="400" height="225" fill="#1a2a3a"/>
+  <g stroke="#5dade2" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M 120 60 L 180 60 L 180 120 L 120 120 Z"/>
+    <path d="M 220 60 L 280 60 L 280 120 L 220 120 Z"/>
+    <path d="M 170 130 L 230 130 L 230 170 L 170 170 Z"/>
+  </g>
+  <text x="200" y="205" font-family="Georgia,serif" font-size="13" fill="rgba(255,255,255,0.75)" text-anchor="middle" letter-spacing="3">NET</text>
+</svg>

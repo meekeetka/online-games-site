@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="poolg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d4f3c"/>
+      <stop offset="100%" stop-color="#063d2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#poolg)"/>
+  <rect x="70" y="55" width="260" height="115" rx="8" fill="#1e8449" stroke="#5d4e37" stroke-width="10"/>
+  <circle cx="160" cy="112" r="14" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <circle cx="240" cy="100" r="14" fill="#e74c3c"/>
+  <circle cx="265" cy="125" r="14" fill="#3498db"/>
+  <text x="200" y="210" font-family="Georgia,serif" font-size="14" font-weight="bold" text-anchor="middle" fill="rgba(255,255,255,0.75)" letter-spacing="3">POOL</text>
+</svg>

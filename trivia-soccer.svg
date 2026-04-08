@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <rect width="400" height="225" fill="#2c3e50"/>
+  <g fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1">
+    <rect x="115" y="45" width="22" height="22"/><rect x="145" y="45" width="22" height="22"/><rect x="175" y="45" width="22" height="22"/>
+    <rect x="205" y="45" width="22" height="22"/><rect x="235" y="45" width="22" height="22"/><rect x="265" y="45" width="22" height="22"/>
+    <rect x="115" y="75" width="22" height="22"/><rect x="145" y="75" width="22" height="22"/><rect x="175" y="75" width="22" height="22"/>
+    <rect x="205" y="75" width="22" height="22"/><rect x="235" y="75" width="22" height="22"/><rect x="265" y="75" width="22" height="22"/>
+    <rect x="115" y="105" width="22" height="22"/><rect x="145" y="105" width="22" height="22"/><rect x="175" y="105" width="22" height="22"/>
+    <rect x="205" y="105" width="22" height="22"/><rect x="235" y="105" width="22" height="22"/><rect x="265" y="105" width="22" height="22"/>
+  </g>
+  <text x="200" y="175" font-family="ui-monospace,monospace" font-size="13" fill="#ecf0f1" text-anchor="middle">MINES</text>
+  <text x="200" y="208" font-family="Georgia,serif" font-size="11" fill="rgba(255,255,255,0.55)" text-anchor="middle">Simon Tatham</text>
+</svg>

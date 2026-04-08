@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e0808"/>
+      <stop offset="100%" stop-color="#050510"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <rect x="40" y="15" width="320" height="170" rx="12" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/><text x="200" y="120" font-family="Georgia,serif" font-size="90" text-anchor="middle" fill="#e74c3c" opacity="0.15">?</text><text x="200" y="115" font-size="64" text-anchor="middle">🏎️</text><rect x="43" y="142" width="44" height="22" rx="11" fill="#e74c3c" opacity="0.8"/><text x="65" y="158" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="white">A</text><rect x="123" y="142" width="44" height="22" rx="11" fill="rgba(255,255,255,0.15)" opacity="0.8"/><text x="145" y="158" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="white">B</text><rect x="203" y="142" width="44" height="22" rx="11" fill="rgba(255,255,255,0.15)" opacity="0.8"/><text x="225" y="158" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="white">C</text><rect x="283" y="142" width="44" height="22" rx="11" fill="rgba(255,255,255,0.15)" opacity="0.8"/><text x="305" y="158" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="white">D</text><text x="200" y="213" font-family="Georgia,serif" font-size="12" font-weight="bold" text-anchor="middle" fill="rgba(255,255,255,0.7)" letter-spacing="2">MUSCLE CARS QUIZ</text>
+</svg>
